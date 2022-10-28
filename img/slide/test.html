@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST TEST TEST</title>
+</head>
+<body>
+    <div id="menu">
+        <div>
+            <a href="#1">Первый</a>
+        </div>
+        <div>
+            <a href="#2">Второй</a>
+        </div>
+        <div>
+            <a href="#3">Третий</a>
+        </div>
+    </div>
+
+
+    <div id="slide">
+        <div class="slide" id='1' style="background-image:url('1.jpg');">
+
+        </div>
+        <div class="slide" id='2'style="background-image:url('2.jpg');">
+            
+        </div>
+        <div class="slide" id='3' style="background-image:url('3.jpg');">
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+
+    .slide {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+    #menu {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+      
+    }
+    #menu a {
+        background-color: rgb(137, 129, 145);
+        padding: 10px;
+        display: block;
+        border-radius: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 300;
+
+        
+    }
+</style>
